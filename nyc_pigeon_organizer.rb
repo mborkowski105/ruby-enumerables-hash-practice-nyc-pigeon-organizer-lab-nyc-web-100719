@@ -4,6 +4,8 @@ def nyc_pigeon_organizer(input_pigeon_list)
       
       
       
+      total = applied_discount.reduce(0) { |acc, (key, value)| acc += value[:price] * value[:count]}
+      
       output_pigeon_list = {
       
       }
