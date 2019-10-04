@@ -1,17 +1,12 @@
-def nyc_pigeon_organizer(data)
+def nyc_pigeon_organizer(input_pigeon_list)
   # write your code here!
-      pigeon_list = {
-      "Luca" => {
-        :color => ["brown"],
-        :gender => ["male"],
-        :lives => ["Library"]
-      },
-      "Lola" => {
-        :color => ["black"],
-        :gender => ["female"],
-        :lives => ["Central Park"]
+      name_array = []
+      
+      
+      
+      output_pigeon_list = {
+      
       }
-    }
     
-    return pigeon_list
+    return output_pigeon_list
 end
