@@ -8,10 +8,7 @@ def nyc_pigeon_organizer(input_pigeon_list)
     output_pigeon_list = {}
     name_array.each do |name|
       if !(output_pigeon_list[name])
-        output_pigeon_list[name] = name => {
-          :color => [],
-          :gender => [],
-          :lives => []
+        output_pigeon_list[name] = name
         }
       end
     end
