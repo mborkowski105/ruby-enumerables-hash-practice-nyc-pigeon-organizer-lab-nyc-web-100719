@@ -10,6 +10,6 @@ def nyc_pigeon_organizer(input_pigeon_list)
       
     }
   
-  name_array = name_array & name_array
+  name_array.to_set.to_ar
   puts name_array
 end
