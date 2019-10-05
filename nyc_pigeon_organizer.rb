@@ -6,8 +6,8 @@ def nyc_pigeon_organizer(input_pigeon_list)
     end
   
     output_pigeon_list = {}
-    name_array.each do |name|
-        output_pigeon_list[name] = name
+    name_array.each_with_index do |name, i|
+        output_pigeon_list[name] = name[i]
     end
   
   puts output_pigeon_list
