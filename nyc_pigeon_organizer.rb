@@ -11,7 +11,6 @@ def nyc_pigeon_organizer(input_pigeon_list)
         name_array.push(sub_item)
       end
     end
-    
     name_array = name_array.uniq
     
     output_pigeon_list = {}
@@ -22,6 +21,8 @@ def nyc_pigeon_organizer(input_pigeon_list)
           :lives => []
         }
     end
+    
+  
   
   puts output_pigeon_list
 end
