@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(input_pigeon_list)
     input_pigeon_list[:color].each do |color|
       if !(name_array.include? color[1])
       name_array.push(color[1])
+      end
     end
   
       
