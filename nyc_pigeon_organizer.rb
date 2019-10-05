@@ -21,9 +21,9 @@ def nyc_pigeon_organizer(input_pigeon_list)
           :lives => []
         }
     end
-  input_pigeon_list
+  input_pigeon_list = input_pigeon_list.stringify_keys
     
-  input_pigeon_list[:color].each do |color, names|
+  input_pigeon_list[color].each do |color, names|
     names.each do |name|
       output_pigeon_list[name][:color].push(color)
     end
