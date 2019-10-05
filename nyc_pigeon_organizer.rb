@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(input_pigeon_list)
   # write your code here!
     name_array = []
     input_pigeon_list[:color].each do |color|
-      name_array.push(color)
+      name_array.push(color[color])
     end
   
     output_pigeon_list = {}
@@ -10,5 +10,5 @@ def nyc_pigeon_organizer(input_pigeon_list)
         output_pigeon_list[name] = name
     end
   
-  puts output_pigeon_list
+  puts name_array
 end
