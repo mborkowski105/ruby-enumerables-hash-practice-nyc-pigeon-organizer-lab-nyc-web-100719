@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(input_pigeon_list)
       
     }
   
-  name_array = name_array.uniq
+  name_array = name_array.to_set
   puts name_array  
   return output_pigeon_list
 end
