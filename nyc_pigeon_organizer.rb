@@ -10,6 +10,6 @@ def nyc_pigeon_organizer(input_pigeon_list)
       
     }
   
-  name_array.uniq!
+  name_array | name_array
   puts name_array
 end
