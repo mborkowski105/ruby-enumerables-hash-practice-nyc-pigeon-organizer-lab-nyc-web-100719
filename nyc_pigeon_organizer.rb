@@ -28,5 +28,11 @@ def nyc_pigeon_organizer(input_pigeon_list)
     end
   end
   
+  input_pigeon_list[:gender].each do |gender, names|
+    names.each do |name|
+      output_pigeon_list[name][:gender].push(gender.to_s)
+    end
+  end
+  
   puts output_pigeon_list
 end
