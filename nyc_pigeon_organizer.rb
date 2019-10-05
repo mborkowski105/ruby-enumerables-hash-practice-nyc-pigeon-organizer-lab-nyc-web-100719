@@ -3,6 +3,7 @@ def nyc_pigeon_organizer(input_pigeon_list)
     name_array = []
     input_pigeon_list[:color].each do |color|
       name_array.push(color[1])
+      name_array.uniq
     end
   
       
