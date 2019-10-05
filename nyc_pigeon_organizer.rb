@@ -34,5 +34,11 @@ def nyc_pigeon_organizer(input_pigeon_list)
     end
   end
   
-  puts output_pigeon_list
+  input_pigeon_list[:lives].each do |lives, names|
+    names.each do |name|
+      output_pigeon_list[name][:lives].push(lives.to_s)
+    end
+  end
+  
+  return output_pigeon_list
 end
