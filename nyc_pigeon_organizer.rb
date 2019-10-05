@@ -5,7 +5,9 @@ def nyc_pigeon_organizer(input_pigeon_list)
       name_array.push(value)
     end
     
-    name_array = name_array.uniq
+    name_array.map
+    
+    
     output_pigeon_list = {}
     name_array.each do |name|
         output_pigeon_list[name] = name
