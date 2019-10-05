@@ -22,9 +22,9 @@ def nyc_pigeon_organizer(input_pigeon_list)
         }
     end
     
-  input_pigeon_list[:color].each do |key, value|
-    output_pigeon_list.each do |pigeon|
-      pigeon[:color] = value.stringify_keys
+  input_pigeon_list[:color].each do |color, names|
+    names.each do |name|
+      output_pigeon_list[name][:color].push()
     end
   end
   
