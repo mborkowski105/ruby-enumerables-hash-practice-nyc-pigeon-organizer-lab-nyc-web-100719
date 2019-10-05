@@ -10,5 +10,4 @@ def nyc_pigeon_organizer(input_pigeon_list)
       
     }
   
-  puts name_array
 end
