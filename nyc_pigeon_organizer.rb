@@ -13,10 +13,9 @@ def nyc_pigeon_organizer(input_pigeon_list)
   name_array = name_array.sort!
 
   result = name_array.reject.with_index do |ele,index|
-  result = (a[index+1] ^ ele)
-  result == 0
+  res = (a[index+1] ^ ele)
+  res == 0
 end
-
 print result
   puts name_array  
   return output_pigeon_list
